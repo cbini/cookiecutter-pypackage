@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # init pyproject and install dev dependencies
-pdm add --no-sync -d mkdocs towncrier pytest tox dynaconf
-
-# init dynaconf
-pdm run dynaconf init -f toml --path=.dynaconf/
+pdm add -d mkdocs towncrier pytest tox dynaconf
 
 # init git repo and add to GitHub
 gh repo create --private --source=. --remote=upstream
@@ -15,3 +12,6 @@ gi linux,macos,windows,python >.gitignore
 
 # init trunk, accept all defaults
 trunk init -y
+
+# init dynaconf
+pdm run dynaconf init -f toml --path=.dynaconf/
