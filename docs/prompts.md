@@ -22,12 +22,7 @@ The following appear in various parts of your generated project.
 The following package configuration options set up different features
 for your project.
 
-|                                   |                                                                                                                                                                                                    |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `use_pytest`                      | Whether to use [pytest](https://docs.pytest.org/en/latest/)                                                                                                                                        |
-| `use_pypi_deployment_with_travis` | Whether to use PyPI deployment with                                                                                                                                                                |
-| [Travis](https://travis-ci.org/). |
-| `add_pyup_badge`                  | Whether to include a [pyup](https://github.com/pyupio/pyup) badge                                                                                                                                  |
-| `command_line_interface`          | Whether to create a console script using Click. Console script entry point will match the project_slug. Options: `['Click', 'Argparse', 'No command-line interface']`                              |
-| `create_author_file`              | Whether to create an authors file                                                                                                                                                                  |
-| `open_source_license`             | Choose a [license](https://choosealicense.com/). Options: `[1. MIT License, 2. BSD license, 3. ISC license, 4. Apache Software License 2.0, 5. GNU General Public License v3, 6. Not open source]` |
+|                          |                                                                                                                                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `command_line_interface` | Whether to create a console script using Click. Console script entry point will match the project_slug. Options: `['Click', 'Argparse', 'No command-line interface']`                              |
+| `open_source_license`    | Choose a [license](https://choosealicense.com/). Options: `[1. MIT License, 2. BSD license, 3. ISC license, 4. Apache Software License 2.0, 5. GNU General Public License v3, 6. Not open source]` |

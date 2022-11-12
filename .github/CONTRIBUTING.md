@@ -12,9 +12,9 @@ Report bugs at https://github.com/audreyr/cookiecutter-pypackage/issues
 
 If you are reporting a bug, please include:
 
--   Your operating system name and version.
--   Any details about your local setup that might be helpful in troubleshooting.
--   Detailed steps to reproduce the bug.
+- Your operating system name and version.
+- Any details about your local setup that might be helpful in troubleshooting.
+- Detailed steps to reproduce the bug.
 
 ### Fix Bugs
 
@@ -34,9 +34,9 @@ The best way to send feedback is to file an issue at https://github.com/audreyr/
 
 If you are proposing a new feature:
 
--   Explain in detail how it would work.
--   Keep the scope as narrow as possible, to make it easier to implement.
--   Remember that this is a volunteer-driven project, and that contributions are welcome :)
+- Explain in detail how it would work.
+- Keep the scope as narrow as possible, to make it easier to implement.
+- Remember that this is a volunteer-driven project, and that contributions are welcome :)
 
 ## Get Started
 
@@ -78,7 +78,7 @@ Ready to contribute? Here's how to set up [cookiecutter-pypackage]{.title-ref} f
     flake8 ./tests
     ```
 
-6.  The next step would be to run the test cases. [cookiecutter-pypackage]{.title-ref} uses pytest, you can run PyTest. Before you run pytest you should ensure all dependencies are installed:
+6.  The next step would be to run the test cases. `cookiecutter-pypackage` uses pytest, you can run PyTest. Before you run pytest you should ensure all dependencies are installed:
 
     ```bash
     pip install -rrequirements_dev.txt
@@ -98,7 +98,7 @@ Ready to contribute? Here's how to set up [cookiecutter-pypackage]{.title-ref} f
     tox
     ```
 
-    If you are missing flake8, pytest and/or tox, just [pip install]{.title-ref} them into your virtualenv.
+    If you are missing flake8, pytest and/or tox, just `pip install` them into your virtualenv.
 
 8.  If your contribution is a bug fix or new feature, you may want to add a test to the existing test suite. See section Add a New Test below for details.
 
