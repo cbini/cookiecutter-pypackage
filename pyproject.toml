@@ -5,9 +5,11 @@ description = "Cookiecutter template for a Python package"
 authors = [
   { name = "Charlie Bini", email = "5003326+cbini@users.noreply.github.com" },
 ]
-dependencies = []
 requires-python = ">=3.7"
 license = { text = "BSD" }
+keywords = ['cookiecutter', 'template', 'package']
+dependencies = []
+
 [project.optional-dependencies]
 
 [build-system]
