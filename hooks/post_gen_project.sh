@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # init pyproject and install dev dependencies
-pdm init
-pdm add -d mkdocs towncrier pytest tox dynaconf
+pdm add --no-sync -d mkdocs towncrier pytest tox dynaconf
 
 # init trunk, accept all defaults
 trunk init -y

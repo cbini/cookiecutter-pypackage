@@ -16,45 +16,31 @@
 - trunk
 - mkdocs
 - towncrier
+- [MkDocs](https://www.mkdocs.org/) docs: Documentation ready for generation
+- Testing setup with `pytest`
+- [Tox](https://tox.wiki/en/latest/) testing: Setup to easily test for Python 3.7+
 - `.gitignore` provided by gitignore.io
 - GNU General Public License v3
 - `src/` directory
-  - Testing setup with `unittest` and `pytest`
-  <!-- -   [Travis-CI](http://travis-ci.org/): Ready for Travis Continuous Integration testing -->
-- [Tox](https://tox.wiki/en/latest/) testing: Setup to easily test for Python 3.7+
-  <!-- -   [Sphinx](http://sphinx-doc.org/) docs: Documentation ready for generation with, for example, [Read the Docs](https://readthedocs.io/) -->
-  <!-- -   [bump2version](https://github.com/c4urself/bump2version): Pre-configured version bumping with a single command -->
-  <!-- -   Auto-release to [PyPI](https://pypi.python.org/pypi) when you push a new tag to master (optional) -->
-  <!-- -   Command line interface using Click (optional) -->
-
-## Build Status
-
-Linux:
-
-[![Linux build status on Travis CI](https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg)](https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage)
-
-Windows:
-
-[![Windows build status on Appveyor](https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true)](https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master)
+<!-- - Auto-release to [PyPI](https://pypi.python.org/pypi) when you push a new tag to master (optional) -->
 
 ## Quickstart
 
 Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 1.4.0 or higher):
 
-    ```
-    pip install -U cookiecutter
-    ```
+```sh
+pip install -U cookiecutter
+```
 
 Generate a Python package project:
 
-    ```
-    cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
-    ```
+```sh
+cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+```
 
 Then:
 
 - Create a repo and put it there.
-- Add the repo to your [Travis-CI](http://travis-ci.org/) account.
 - Install the dev requirements into a virtualenv. (`pip install -r requirements_dev.txt`)
 - [Register](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) your project with PyPI.
 - Run the Travis CLI command `travis encrypt --add deploy.password` to encrypt your PyPI password in Travis config and activate automated deployment on PyPI when you push a new tag to master branch.
