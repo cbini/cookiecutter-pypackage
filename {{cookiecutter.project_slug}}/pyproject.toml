@@ -1,8 +1,10 @@
 [project]
-name = "{{ }}"
+name = "{{cookiecutter.project_name }}"
 version = "0.1.0"
-description = "{{ cookiecutter. }}"
-authors = [{ name = "{{ cookiecutter. }}", email = "{{ cookiecutter. }}" }]
+description = "{{ cookiecutter.project_short_description }}"
+authors = [
+  { name = "{{ cookiecutter.full_name }}", email = "{{ cookiecutter.email }}" },
+]
 requires-python = ">=3.7"
 license = { text = "GPL-3.0-or-later" }
 dependencies = []
