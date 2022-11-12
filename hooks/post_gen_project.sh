@@ -4,6 +4,7 @@
 pdm add -d mkdocs towncrier pytest tox dynaconf
 
 # init git repo and add to GitHub
+git init
 gh repo create --private --source=. --remote=upstream
 
 # create .gitignore
