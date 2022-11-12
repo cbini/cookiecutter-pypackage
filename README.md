@@ -17,8 +17,8 @@
 - mkdocs
 - towncrier
 - `.gitignore` provided by gitignore.io
-- gh cli integration
-- pyscaffold-inspired project directory
+- GNU General Public License v3
+- `src/` directory
   - Testing setup with `unittest` and `pytest`
   <!-- -   [Travis-CI](http://travis-ci.org/): Ready for Travis Continuous Integration testing -->
 - [Tox](https://tox.wiki/en/latest/) testing: Setup to easily test for Python 3.7+

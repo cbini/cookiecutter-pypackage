@@ -6,7 +6,7 @@ authors = [
   { name = "Charlie Bini", email = "5003326+cbini@users.noreply.github.com" },
 ]
 requires-python = ">=3.7"
-license = { text = "BSD" }
+license = { text = "GPL-3.0-or-later" }
 keywords = ['cookiecutter', 'template', 'package']
 dependencies = []
 
