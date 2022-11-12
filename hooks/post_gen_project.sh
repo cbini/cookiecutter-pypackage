@@ -12,11 +12,12 @@ function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@; }
 gi linux,macos,windows,python >.gitignore
 
 # init dynaconf
-pdm run dynaconf init -f=toml
+pdm run dynaconf init -f toml
 
 # commit new files
 git add .
 git commit -m "Initial commit"
 
 # init trunk, accept all defaults
-trunk init -y --no-progress
+trunk init --yes-to-all --nocheck-sample
+trunk check --all --fix
