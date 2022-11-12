@@ -91,9 +91,9 @@ travis encrypt --add deploy.password
 
 This will:
 
--   Encrypt your PyPI password in your Travis config.
--   Activate automated deployment on PyPI when you push a new tag to
-    master branch.
+- Encrypt your PyPI password in your Travis config.
+- Activate automated deployment on PyPI when you push a new tag to
+  master branch.
 
 See `travis-pypi-setup`{.interpreted-text role="ref"} for more information.
 

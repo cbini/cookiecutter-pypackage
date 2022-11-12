@@ -41,8 +41,8 @@ git push --tags
 
 This will result in:
 
--   mypackage 0.1.1 showing up in your GitHub tags/releases page
--   mypackage 0.1.1 getting released on PyPI
+- mypackage 0.1.1 showing up in your GitHub tags/releases page
+- mypackage 0.1.1 getting released on PyPI
 
 You can also replace patch with [minor]{.title-ref} or [major]{.title-ref}.
 
