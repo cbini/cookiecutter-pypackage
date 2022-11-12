@@ -1,0 +1,30 @@
+[project]
+name = "cookiecutter-pypackage"
+version = "0.1.0"
+description = "Cookiecutter template for a Python package"
+authors = [
+  { name = "Charlie Bini", email = "5003326+cbini@users.noreply.github.com" },
+]
+dependencies = []
+requires-python = ">=3.7"
+license = { text = "BSD" }
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "pytest>=7.2.0",
+  "tox>=3.27.0",
+  "cookiecutter>=2.1.1",
+  "alabaster>=0.7.12",
+  "watchdog>=2.1.9",
+  "pytest-cookies>=0.6.1",
+]
+
+[tool.pdm.scripts]
+bake = { cmd = "cookiecutter --no-input . --overwrite-if-exists", description = "generate project using defaults" }
+watch = { cmd = "watchmedo shell-command -p '*.*' -c 'pdm run bake --no-input' -W -R -D \\{{ cookiecutter.project_slug }}/", description = "generate project using defaults and watch for changes" }
+replay = { cmd = "watchmedo shell-command -p '*.*' -c 'pdm run bake --replay' -W -R -D \\{{cookiecutter.project_slug}}/", description = "replay last cookiecutter run and watch for changes" }

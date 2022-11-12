@@ -1,16 +1,15 @@
-from contextlib import contextmanager
-import shlex
-import os
-import sys
-import subprocess
-import yaml
 import datetime
-import pytest
-from cookiecutter.utils import rmtree
-
-from click.testing import CliRunner
-
 import importlib
+import os
+import shlex
+import subprocess
+import sys
+from contextlib import contextmanager
+
+import pytest
+import yaml
+from click.testing import CliRunner
+from cookiecutter.utils import rmtree
 
 
 @contextmanager
