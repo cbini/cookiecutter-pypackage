@@ -23,5 +23,9 @@ git commit -m "Initial commit"
 trunk init --yes-to-all --nocheck-sample
 trunk check --all --fix
 
-# add repo to GitHub
+# commit Trunk auto-corrected files
+git add .
+git commit -m "Trunk auto-fixes"
+
+# create repo on GitHub
 gh repo create --private --source=. --remote=upstream
