@@ -12,9 +12,6 @@ function gi() {
 }
 gi linux,macos,windows,python >.gitignore
 
-# init dynaconf
-pdm run dynaconf init --format toml
-
 # commit new files
 git add .
 git commit -m "Initial commit"
